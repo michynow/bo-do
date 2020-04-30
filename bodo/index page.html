@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>Hurtownia BO-DO</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://kit.fontawesome.com/b46766feba.js" crossorigin="anonymous"></script> <!--Font Awesome script for Icons -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> <!--Livereload script -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> <!-- Google fonts link -->
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Signika:wght@700&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<!--Navbar header -->
+	<div class="navbarcontainer">
+		<!--div for logo-->
+		<div class="logo">
+			<a href="#"><img src="images/logo bodo.png" alt="logo" height="100%"></a>
+		</div>
+		<!--Divider for navbar - blank space, so links can be on other side -->
+		<div class="navbar-divider">
+		</div>
+		<!--container for links- will be used for display flex positioning -->
+		<div class="links-container">
+			<a href="#" target="_self">Link 1 </a>
+			<a href="#" target="_self">Link 2 </a>
+				<div class="dropdown">
+					<a class="dropbtn" href="">Link 3 <span> <i class="fas fa-sort-down"></i></span></a>
+					<!--dropdown button in the navbar -->
+						<div class="dropdown-content">
+							<a href="#" target="_self">Option 1</a>
+							<a href="#" target="_self">Option 1</a>
+							<a href="#" target="_self">Option 1</a>
+							<a href="#" target="_self">Option 1</a>
+					</div>	
+				</div>
+			<a href="#" target="_self">Link 4 </a>
+			<a href="#" target="_self">Link 5 </a>
+		</div>
+		<!--Div reserved for language selection-->
+		<div class="lang-sel">
+			<div class="polish"></div>
+			<div class="english"></div>
+		</div>
+	</div>
+<!-- Hero image section with captions -->
+	<section class="heroimg">
+		<div class="heroimgtext">
+			<h1>Hurtownia <span style="color:rgb(53, 171, 83)">BO-DO</span></h1>
+			<p>Jesteśmy z Wami już od <span style="color:rgb(207, 8, 8)">22 lat!</span></p>
+		</div>
+		<div class="heroimgtext2">
+			<p><h1>Rozdzielnice, które zadowolą nawet najbardziej wymagających...</h1>
+		</div>
+	</section>
+<!-- flexbox colums under hero img-->
+	<section class="mainpage-columns">
+		<div class="flexcontainer-mainpage">
+			<div class="column-mainpage" id="column1">
+				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+				<p> sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="clickablebutton"><a href="#">Click me!</a></div>
+			</div>
+			<div class="column-mainpage" id="column2">
+				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+				<p> sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="clickablebutton"><a href="#">Click me!</a></div>
+			</div>
+			<div class="column-mainpage" id="column3">
+				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+				<p> sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="clickablebutton"><a href="#">Click me!</a></div>
+			</div>
+			
+		</div>
+	</section>
+	<div class="footer">
+		<div class="contactinfofooter">
+			<h1>FHU "BO-DO" K. Klatka, T. Nowakowski, S.J.</h1>
+			<p><i class="fas fa-home"></i><span class="footer-text-bold">Adres:</span> ul. Mostnika 5, 70-672 Szczecin</p>
+			<p>
+				<i class="fas fa-phone"></i><span class="footer-text-bold">Telefon:</span>
+				(091) 489-89-98
+			</p>
+			<p>
+				<i class="fas fa-envelope-open-text"></i><span class="footer-text-bold">E-mail:</span> biuro@bo-do.pl
+			</p>
+			<p><i class="far fa-clock"></i><span class="footer-text-bold"></i>Godziny otwarcia:</span> poniedziałek - piątek 08:00 - 16:00
+			</p>
+		</div>
+	</div>
+</body>
+</html>

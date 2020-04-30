@@ -1,0 +1,243 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	margin:0px;
+}
+/*Positioning of navbar items */
+.navbarcontainer{
+	display:flex;
+	background-color:red;
+	justify-content:flex-end;
+	background-color:rgb(237, 242, 239);
+	font-family: 'Montserrat', sans-serif;
+}
+.logo{
+	padding:0.5em;
+	height:8vh;
+}
+.logo img{
+	box-shadow:0.5px 0.5px 1px 1px black;
+}
+/*setting of divider of navbar - will be reduced in media queries */
+.navbar-divider{
+	width:40%;
+	height:auto;
+}
+/* stylisation & positioning of links inside a container */
+.links-container{
+	display:flex;
+	justify-content:space-between;
+	flex-direction:row;
+	width:40%;
+}
+/*stylisation of links */
+.links-container a{
+	padding: 1.2em;
+	text-align:center;
+	text-decoration:none;
+	color:black;
+	transition:color 0.5s;
+	position: relative;
+	white-space:nowrap;
+}
+.links-container a:hover{
+	color:lightgreen;
+}
+
+/*manual padding of dropdown div */
+.dropdown{
+	overflow:hidden;
+	padding-top:1.2em;
+	overflow:visible;
+	white-space:nowrap;
+
+}
+
+.dropbtn i{
+	vertical-align:top;
+}
+
+/*dropdown menu settings */
+
+.dropdown-content{ 
+	position:absolute;
+	top:59px;
+	display:none; /*hidden the content of dropdown - will be displayable upon hover */
+	z-index:1;
+	position:absolute;
+	background-color:white;
+	box-shadow:2px 2px 2px #888888;
+}
+.dropdown-content a{
+	display:block;
+	padding:1.2em;
+	border-bottom:1px solid grey;
+
+}
+/* make the dropdown display upon hovering */
+.dropdown:hover .dropdown-content{
+	display:block;
+}
+
+
+.lang-sel{
+	width:10%;
+}
+
+/* main page - hero image */
+.heroimg{
+	height:92vh;
+	background-image:url("images/bodo-heroimg.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-origin:content-box;
+	opacity:0.9;
+}
+.heroimgtext{
+	position:absolute;
+	top:10%;
+	left:5%;
+	color:white;
+	text-shadow:2px 2px black;
+	font-size:4vw;
+	font-family: 'Signika', sans-serif;
+}
+.heroimgtext2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Dancing Script', cursive;
+	position:absolute;
+	bottom:5%;
+	left:2%;
+	font-size:2.6vw;
+	color:white;
+	text-shadow:4px 4px black;
+}
+
+/* settings for 3 columns below hero image */
+.mainpage-columns{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.flexcontainer-mainpage{
+	display:flex;
+	justify-content:flex-start;
+	flex-direction:row;
+	padding:0px;
+}
+/*coloristic settings of pages */
+.column-mainpage{
+	padding:2em;
+	color:white;
+}
+#column1{
+	background-color:rgb(44, 156, 73);
+	width:33.33%;
+}
+#column2{
+background-color:rgb(49, 168, 80);
+width:33.33%;
+}
+#column3{
+	background-color:rgb(57, 196, 93);
+	width:33.34%;
+}
+/* Stylisation of buttons inside columns below hero img */
+.clickablebutton a{
+	text-decoration:none;
+	padding:0.7em;
+	color:white;
+	border:2px solid white;
+	border-radius:3px;
+	font-weight:bold;
+	float:right;
+	transition: color 0.5s, background-color 0.5s;
+}
+/*setting for transition of buttons */
+.clickablebutton a:hover{
+	background-color:white;
+	color:green;
+}
+
+
+.footer{
+	background-color:rgb(119, 121, 125);
+	color:white;
+	height:35vh;
+	font-family:Arial;
+	padding-top:2vh;
+	position:relative;
+}
+.contactinfofooter{
+	position:absolute;
+	left:10vw;
+	font-size:18px;
+	text-shadow:0.5px 0.5px black;
+}
+.contactinfofooter h1{
+	font-size:1em;;
+}
+.contactinfofooter i{
+	color:red;
+}
+.footer-text-bold{
+	font-weight:bold;
+	margin-left:1em;
+}
+
+/*media queries for mobile */
+@media screen and (max-width:1200px){
+	
+	.navbar-divider{
+		width:10%;
+	}
+	.links-container{
+		width:70%;
+	}
+	
+}
+
+@media screen and (max-width:800px){
+	.heroimgtext{
+		font-size:6vw;
+		top:40%;
+		text-align:center;
+	}
+	.navbarcontainer{
+		display:block;
+	}
+	.dropdown{
+		position:relative;
+	}
+	.dropdown-content{
+		position:absolute;
+		top:56px
+	}
+	/*clearfix */
+	.clickablebutton::after{
+		display:table;
+		content:"";
+		clear:both;
+		}
+	.heroimgtext2{
+		display:none;
+	}
+	.flexcontainer-mainpage{
+		display:block;
+	}
+		
+	#column1{
+		width:100%;	
+	}
+	#column2{
+		width:100%;
+	}
+	#column3{
+		width:100%;
+	}
+}
+
+@media screen and (max-width:500px) {
+	.navbar-divider{
+		display:0%
+	}
+}
